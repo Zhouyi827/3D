@@ -1,0 +1,91 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #ddd;
+}
+#wrap{
+	width: 700px;
+	height: 300px;
+	margin: 100px auto;
+	background: #ddd;
+	perspective: 2000px;
+	box-shadow:  0 15px 50px #000;
+}
+.list{
+	transition: 1s;
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 300px;
+	transform-origin: center center -150px;
+	transform-style: preserve-3d;
+}
+.list div{
+	width: 50px;
+	height: 300px;
+	position: absolute;
+}
+.list div:nth-of-type(1){
+	left: 0;
+	top: -300px;
+	transform-origin: bottom;
+	transform: rotateX(90deg);
+	background: url(./../img/1.jpg) no-repeat;
+}
+.list div:nth-of-type(2){
+	width: 300px;
+	height: 300px;
+	background: #ccc;
+	left: -300px;
+	top: 0px;
+	transform-origin: right;
+	transform: rotateY(-90deg);
+}
+.list div:nth-of-type(3){
+	left: 0;
+	top: 0;
+	transform-origin: top;
+	transform: translateZ(-300px);
+	background: url(./../img/2.jpg) no-repeat;
+}
+.list div:nth-of-type(4){
+	width: 300px;
+	height: 300px;
+	background: #ccc;
+	left: 50px;
+	top: 0px;
+	transform-origin: left;
+	transform: rotateY(90deg);
+}
+.list div:nth-of-type(5){
+	left: 0px;
+	top: 300px;
+	transform-origin: top;
+	transform: rotateX(-90deg);
+	background: url(./../img/3.jpg) no-repeat;
+}
+.list div:nth-of-type(6){
+	left: 0px;
+	top: 0px;
+	background: url(./../img/4.jpg) no-repeat;
+}
+#navs{
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+}
+#navs a{
+	margin: 0 5px;
+	display: block;
+	font: 12px/30px "宋体";
+	width: 40px;
+	height: 30px;
+	background: #0C45A7;
+	border-radius: 5px;
+	float: left;
+	text-decoration: none;
+	color: #fff;
+}
+#navs a:hover{
+	background: #1d54d5;
+}
